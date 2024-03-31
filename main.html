@@ -7,8 +7,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
-    </table>
+    <table border="1" id="main" style="width: 100%; height: 100%">
+      <!-- main table satrt -->
+		<tr> <!-- NT2,NT1 -->
+			<td>
+				<table id="r1c1" border="1"> <!-- NT2 start-->
+					<tr><th colspan="2">Nested Table 2</th></tr>
+			        <tr> <th>Column 1</th>
+					     <th>Column 2</th>
+					</tr>
+					 <tr> <td>abc</td>
+					     <td>def</td>
+					</tr>
+				</table> <!-- NT2 end-->
+			</td>	
+			<td>
+				<table id="r1c2" border="1"> <!-- NT1 start -->
+					<tr><th colspan="2">Nested Table 1</th></tr>
+					<tr>
+						<td colspan="2">
+						<ul>
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+						</ul>
+						</td>
+					</tr>
+				</table> <!-- NT1 end-->
+			</td>
+		</tr> <!-- NT2,NT1 end -->
+		<tr><!-- NT3,NT4 start -->
+			<td><!-- NT3 start-->
+				  <table id="r2c1" border="1">
+					  <tr><th colspan="2">Nested Table 3</th></tr>
+					   <tr><td><a href="">Nested Table</a></th>
+						   <td>Demo Continued</th>
+					   </tr>
+				  </table>
+			</td><!-- NT3 end -->
+	        <td><!-- NT4 start-->
+				    <table id="r2c2"  border="1">
+					  <tr><th colspan="2">Nested Table 4</th></tr>
+					  <tr id="html"><td colspan="2">HTML</td></tr>  
+			</td><!-- NT4 end-->
+		</tr><!-- NT3,NT4 start -->
+    </table> <!-- main table end -->
   </body>
 </html>
